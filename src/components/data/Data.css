@@ -1,0 +1,63 @@
+.data {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, .1);
+}
+
+.data:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../../assets/dats.avif') no-repeat center center/cover;
+    z-index: -1;
+}
+
+.data .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 50%;
+}
+
+.data .content p {
+    margin: 2rem 0;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+}
+.data .content h2 {
+    color: #fff;
+}
+
+@media screen and (max-width:940px) {
+    .data .content {
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background: rgba(250, 250, 250, .1)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
