@@ -13,3 +13,26 @@
     width: 100%;
     z-index: -1;
 }
+
+.recovery .content {
+    top: 30%;
+    position: absolute;
+    width: 50%;
+    left: 0;
+    padding: 1rem;
+}
+
+.recovery h2 {
+    color: #f8f8f8;
+}
+
+.recovery p {
+    color: #f8f8f8;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:940px) {
+    .recovery .content {
+        width: 100%;
+    }
+}

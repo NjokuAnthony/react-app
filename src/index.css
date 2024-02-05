@@ -58,6 +58,8 @@ h2 {
 .container {
   max-width: 1240px;
   margin: auto;
+  height: 100%;
+  position: relative;
 }
 
 button {
