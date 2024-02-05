@@ -1,0 +1,105 @@
+.footer {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.footer:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../../assets/modern-cloud-technology-futuristic-online-storage-work-from-home_184920-368.avif) no-repeat center center/cover;
+    z-index: -1;
+}
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer .top .logo-footer {
+    display: flex;
+    align-items: center;
+}
+.footer .top .icon {
+    font-size: 3rem;
+    color: var(--light);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.footer h2 {
+    font-size: 2rem;
+}
+.footer .col-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    padding: 1rem;
+    width: 100%;
+}
+ .footer h3 {
+    margin: 1rem 0 2rem 0;
+    text-transform: uppercase;
+ }
+ .footer p {
+    margin: .5rem 0;
+ }
+
+ .footer form {
+    width: 100%;
+    margin-bottom: .6rem;
+    position: relative;
+ }
+ .footer form input {
+    padding: 1rem;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+ }
+
+ .footer form input:focus {
+    color: #333;
+    outline: var(--light);
+    box-shadow: 0 0 8px 0 var(--dark);
+ }
+
+ .footer form .mail-icon {
+    position: absolute;
+    font-size: 1.4rem;
+    margin: 1rem;
+    right: .2rem;
+    cursor: pointer;
+ }
+
+.footer form .social-icon {
+    margin: 1rem 1rem 1rem 0;
+    padding: .6rem;
+    background-color: var(--dark);
+    font-size: 3rem;
+    color: #f8f8f8;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width:940px) {
+    .footer {
+        height: 100%;
+    }
+    .footer .col-container{
+        grid-template-columns: 2fr 2fr;
+    }
+    .footer form {
+        grid-column: 1 / span 2;
+    }
+}
